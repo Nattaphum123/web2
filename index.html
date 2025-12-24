@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Freelance Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Kanit', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Profile Section */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 2.5rem; color: var(--dark-color); margin-bottom: 10px; }
+        .tagline { color: var(--primary-color); font-weight: 600; font-size: 1.2rem; margin-bottom: 20px; }
+
+        /* Sections */
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #e2e8f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Button */
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+            <h1>ชื่อ-นามสกุล ของคุณ</h1>
+            <p class="tagline">Full Stack Developer | Graphic Designer | Freelancer</p>
+            <p>ยินดีต้อนรับครับ! ผมเป็นฟรีแลนซ์ที่เชี่ยวชาญด้านการออกแบบและพัฒนาเว็บไซต์ มีประสบการณ์ทำงานมากกว่า X ปี มุ่งมั่นที่จะสร้างสรรค์ผลงานคุณภาพเพื่อตอบโจทย์ธุรกิจของคุณ</p>
+        </header>
+
+        <section>
+            <h2>ประวัติการทำงาน</h2>
+            <p><strong>2022 - ปัจจุบัน:</strong> รับออกแบบ UI/UX สำหรับ Mobile App</p>
+            <p><strong>2020 - 2022:</strong> Web Developer ที่บริษัท ABC</p>
+        </section>
+
+        <section>
+            <h2>ทักษะความสามารถ</h2>
+            <div class="skills-container">
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Node.js</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>ติดต่อจ้างงาน</h2>
+            <p>📧 อีเมล: yourname@email.com</p>
+            <p>📱 เบอร์โทรศัพท์: 08x-xxx-xxxx</p>
+            <p>💬 Line ID: @yourid</p>
+            
+            <a href="mailto:yourname@email.com" class="cta-button">ส่งอีเมลหาผมตอนนี้</a>
+        </section>
+
+        <footer>
+            &copy; 2024 YourName Portfolio. Built with ❤️ and Hosted on GitHub.
+        </footer>
+    </div>
+
+</body>
+</html>
